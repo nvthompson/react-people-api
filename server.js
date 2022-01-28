@@ -38,6 +38,8 @@ app.use(morgan('dev'));
 app.use(cors());
 
 //Routes
+app.get('/', (req,res) => res.redirect('/people'));
+
 app.get('/', (req,res) => {
     res.send('hello world');
 });
